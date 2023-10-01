@@ -9,10 +9,63 @@
 <body>
     <a href="index.html">Back to Home</a>
     <h1>Task 1: Deep Dive into TypeScript Fundamentals: A Learning Journey</h1>
-    <div class="notes">Student notes are inidcated by the color blue.</div>
+    <h2>Installing TypeScript</h2>
+    <p><b>Step 1(optional):</b> Run the command <b>npm init -y</b> from the directory your project is in.</p>
+    <br>
+    <p>Explanation:</p>
+    
+        <div class="markdown prose w-full break-words dark:prose-invert light">
+                <p>The <code>npm init -y</code> command is a shortcut for initializing a new Node.js project with default values
+                        for the package.json file without prompting you for any input. Here's what each part of the command
+                        does:</p>
+                <ul>
+                        <li>
+                                <p><code>npm init</code>: This command initializes a new Node.js project and creates a
+                                        <code>package.json</code> file. The <code>package.json</code> file is used to manage
+                                        project dependencies, scripts, and metadata.</p>
+                        </li>
+                        <li>
+                                <p><code>-y</code> or <code>--yes</code>: This flag tells npm to automatically accept default
+                                        values for all the prompts that would normally appear when running <code>npm init</code>
+                                        without the <code>-y</code> flag. It essentially skips the interactive setup and creates
+                                        the <code>package.json</code> file with default values.</p>
+                        </li>
+                </ul>
+                <p>Using <code>npm init -y</code> is handy when you want to quickly set up a new project and don't want to
+                        manually answer questions about the project's name, version, description, entry point, etc. It's
+                        especially useful when you plan to customize the <code>package.json</code> file later or when you're
+                        setting up a project as part of a scripted process where manual input is not practical.</p>
+        </div>
+
+        <p><b>Step 2:</b> Run the command <b>npm install typescript --save-dev</b> from the directory your project is in.</p>
+        <br>
+        <p>Explanation:</p>
+        <div class="markdown prose w-full break-words dark:prose-invert light">
+                <p>The <code>npm install typescript --save-dev</code> command installs the TypeScript compiler and adds it to
+                        the <code>devDependencies</code> section of the <code>package.json</code> file. Here's what each part of
+                        the command does:</p>
+                <ul>
+                        <li>
+                                <p><code>npm install typescript</code>: This command installs the TypeScript compiler and adds it
+                                        to the <code>devDependencies</code> section of the <code>package.json</code> file.</p>
+                        </li>
+                        <li>
+                                <p><code>--save-dev</code>: This flag tells npm to add the TypeScript compiler to the
+                                        <code>devDependencies</code> section of the <code>package.json</code> file. The
+                                        <code>devDependencies</code> section is used to specify dependencies that are only needed
+                                        during development, such as testing libraries and build tools.</p>
+                        </li>
+                </ul>
+                <p>Using <code>npm install typescript --save-dev</code> is handy when you want to install the TypeScript
+                        compiler and add it to the <code>devDependencies</code> section of the <code>package.json</code> file in
+                        one step. It's especially useful when you want to install the TypeScript compiler as part of a scripted
+                        process where manual input is not practical.</p>
+
+    <h3>------------------ Below this line are the instructions from the learning task this page is desgined to indicate was learned. ------------------</h3>
     <p class="editor-paragraph">
-        <h1 class="editor-heading-h1 ltr" dir="ltr"><span data-lexical-text="true">TypeScript Fundamentals Study</span></h1>
-        <p class="editor-paragraph"><br></p>
+            <h1 class="editor-heading-h1 ltr" dir="ltr"><span data-lexical-text="true">TypeScript Fundamentals Study</span></h1>
+            <div class="notes">Student notes are inidcated by the color blue.</div>
+            <p class="editor-paragraph"><br></p>
 
         <!-- OBJECTIVES -->
         <h2 class="editor-heading-h2 ltr" dir="ltr"><strong class="editor-text-bold" data-lexical-text="true">Learning
@@ -134,7 +187,7 @@
                         <h2 class="editor-heading-h2 ltr" dir="ltr"><span data-lexical-text="true">Engage with Video Lessons:</span></h2>
                         <p class="editor-paragraph"><br></p>
                         <p class="editor-paragraph ltr" dir="ltr"><span data-lexical-text="true">For </span><strong class="editor-text-bold"
-                                data-lexical-text="true">each</strong><span data-lexical-text="true"> video in the</span><a
+                                data-lexical-text="true">each</strong><span data-lexical-text="true"> video in the</span><a target="_blank"
                                 href="https://pro.academind.com/courses/765847/lectures/31897233" class="editor-link ltr" dir="ltr"><span
                                 data-lexical-text="true"> </span><span class="editor-text-underline" data-lexical-text="true">TypeScript
                 </span></a><span data-lexical-text="true">Section, it is called "Bonus: TypeScript Introduction" and it is at
@@ -147,8 +200,7 @@
                     content. For your code-along, create a separate repository where you'll save and commit your code. Each
                     lesson or significant topic from the playlist should be in its own repository. The playlist includes but not
                     limited to the following:</span></li>
-            <li value="2" class="editor-listitem editor-nested-listitem">
-                <ol class="editor-list-ol">
+                <ol>
                     <li value="1" class="editor-listitem ltr" dir="ltr"><span data-lexical-text="true">Introduction to the
                             Module.</span></li>
                     <li value="2" class="editor-listitem ltr" dir="ltr"><span data-lexical-text="true">The rationale behind
@@ -162,14 +214,12 @@
                     <li value="6" class="editor-listitem ltr" dir="ltr"><span data-lexical-text="true">Configuring the
                             TypeScript Compiler.</span></li>
                 </ol>
-            </li>
             <li value="2" class="editor-listitem ltr" dir="ltr"><strong class="editor-text-bold"
                     data-lexical-text="true">Immediate Documentation</strong><span data-lexical-text="true">: After finishing a
                     video segment, pause and document your key takeaways and areas of uncertainty in the respective markdown
                     files under "TypeScript Fundamentals".</span></li>
             <li value="3" class="editor-listitem ltr" dir="ltr"><strong class="editor-text-bold" data-lexical-text="true">Seek
                     Clarification</strong><span data-lexical-text="true">: If content isn't clear, consider:</span></li>
-            <li value="4" class="editor-listitem editor-nested-listitem">
                 <ul class="editor-list-ul">
                     <li value="1" class="editor-listitem ltr" dir="ltr"><span data-lexical-text="true">Rewatching the
                             segment.</span></li>
@@ -178,7 +228,6 @@
                     <li value="3" class="editor-listitem ltr" dir="ltr"><span data-lexical-text="true">Attending office
                             hours.</span></li>
                 </ul>
-            </li>
             <li value="4" class="editor-listitem ltr" dir="ltr"><strong class="editor-text-bold" data-lexical-text="true">Commit
                     Practices</strong><span data-lexical-text="true">: Commit your notes to "fullstack-knowledge-base" after
                     each video segment. On the other hand, commit your code-along to its separate repository.</span></li>
